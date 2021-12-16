@@ -182,7 +182,7 @@ Der **EXMARaLDA Corpus-Manager** (Coma) ist ein Softwarewerkzeug, mit dem EXMARa
 
 Bitte beachten Sie: Das Programm befindet sich in einer fortwährenden Weiterentwicklung („Work in Progress&quot;). Informationen über aktuelle Änderungen finden Sie unter http://www.exmaralda.org/files/changes.html).
 
-# 2Die Coma-Datenstruktur
+# 2 Die Coma-Datenstruktur
 
 Die Struktur, in der Metadaten in Coma verwaltet werden, kennt einige vorgegebene „Datencontainer&quot;:
 
@@ -195,37 +195,37 @@ Die Struktur, in der Metadaten in Coma verwaltet werden, kennt einige vorgegeben
 
 Unter diesen „Containern&quot; existieren verschiedene Datentypen, die in mehreren dieser Container Verwendung finden können. Da es wichtig ist, das Zusammenspiel dieser Container zu verstehen, sollen sie hier kurz beschrieben werden:
 
-## 2.1Korpus
+## 2.1 Korpus
 
 Ein Korpus bildet den Container für alle anderen Metadatentypen. Ein Korpus enthält Metadaten (zu Kommunikationen und Sprechern) sowie Verweise auf alle zum Korpus gehörenden Dateien.
 
-## 2.2Kommunikationen
+## 2.2 Kommunikationen
 
 Mit Kommunikationen werden Gesprächsereignisse verwaltet. An Kommunikationen nehmen typischerweise Sprecher teil und es kann Aufnahmen und Transkriptionen zu den Kommunikationen geben. Das heißt im Datenmodell können Aufnahmen, Transkriptionen, Dateien und Sprecher diesen Kommunikationen zugeordnet sein. Mit den Kommunikationen werden alle Konstellationsdaten zu dem Gesprächsereignis gespeichert, also Dinge wie Ort, Zeit, besondere Umstände, beteiligte Sprachen etc.
 
-## 2.3Sprecher
+## 2.3 Sprecher
 
 Sprecher sind Personen, die sich an der Kommunikation beteiligen. Es muss sich dabei nicht um natürliche Personen handeln (es kann beispielsweise auch ein automatisiertes Dialogsystem als Sprecher geführt werden) und die Sprecher müssen in der Kommunikation auch nicht unbedingt sprechen; wenn sie für die Kommunikation von Belang sind, werden sie hier erfasst. Die Daten, die zu den Sprechern erfasst werden, sind von der Kommunikation zunächst unabhängig. Es sollten keine kommunikationsbezogenen Daten mit den Sprechern erfasst werden, damit Sprecher mehreren Kommunikationen zugeordnet werden können. Erfasst werden dagegen Daten wie: Geburtsort und -Datum, biographische Angaben, gesprochene Sprachen und deren Status etc.
 
-## 2.4Aufnahmen
+## 2.4 Aufnahmen
 
 Aufnahmen beziehen sich auf Audio- oder Videoaufnahmen, die zu Kommunikationen angefertigt wurden. Das Coma-Datenmodell unterscheidet: Aufnahmen und tatsächliche Mediendateien. Einer Aufnahme können mehrere tatsächliche Mediendateien zugeordnet werden. Aufnahmen lassen sich nur anlegen, wenn es bereits eine Kommunikation gibt, zu der sie sich zuordnen lassen.
 
-## 2.5Transkriptionen
+## 2.5 Transkriptionen
 
 Im Datentyp Transkriptionen werden Verknüpfungen zu EXMARaLDA-Transkriptionen gespeichert. Coma verwaltet dabei sowohl Basis- (Dateiendung „.exb) als auch segmentierte Transkriptionen (Dateinendung „.exs&quot;). Zur Anzeige von Basistranskriptionen und zu ihrer Behandlung lassen sich in den Einstellungen von Coma Vorgaben machen ( **Bearbeiten \&gt; Einstellungen** , s. auch Abschnitt _ **Einstellungen** _). Transkriptionen sind, genau wie Aufnahmen, mit Kommunikationen verknüpft. Sie lassen sich also ohne Kommunikation nicht verwalten. Auch mit den Aufnahmen sind sie nur über die Kommunikation verbunden.
 
-## 2.6Verknüpfte Dateien
+## 2.6 Verknüpfte Dateien
 
 Zu Kommunikationen lassen sich auch Dateien zuordnen, die keine Aufnahmen oder Transkriptionen sind. Dies können beispielsweise: Aufnahmeprotokolle, Pläne, gescannte Metadaten-Erfassungsbögen oder ähnliches sein.
 
 ![](RackMultipart20211216-4-q9ctu1_html_862e82fcddcbabf8.png)
 
-## 2.7Weitere Datentypen
+## 2.7 Weitere Datentypen
 
 Zur Erfassung der eigentlichen Metadaten existieren noch weitere Datentypen, z.B. zur einheitlichen Erfassung von Sprachen und Orten. Zwei dieser Datentypen sind dabei von besonderer Bedeutung:
 
-### 2.7.1Locations
+### 2.7.1 Locations
 
 Eine Location bezeichnet in Coma nicht einfach nur einen bestimmten Ort, sondern _einen bestimmten Ort zu einer bestimmten Zeit_, da biographische und andere relevante Ereignisse häufig einen bestimmten Ort und eine bestimmte Zeit haben.
 
